@@ -147,8 +147,8 @@ function renderCubic(equation) {
             zi = s6 * ((s3 * zr3 * zr * zi2) - (s4 * zi3 * zi * zi)) + ci;
             zr = temp;
           } else {
-            temp = s5 * Math.abs((s1 * zr1 * zr * zr) - (s2 * zr2 * zi1 * zi)) + cr;
-            zi = s6 * ((s3 * zr3 * zr * zi2) - (s4 * zi3 * zi * zi)) + ci;
+            temp = s5 * ((s1 * zr1 * zr * zr) - (s2 * zr2 * zi1 * zi)) + cr;
+            zi = s6 * Math.abs((s3 * zr3 * zr * zi2) - (s4 * zi3 * zi * zi)) + ci;
             zr = temp;
           }
         } else {
